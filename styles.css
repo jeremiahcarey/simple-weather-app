@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    overflow: auto;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    text-align: center;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;   
+    justify-content: center;
+    align-items: center;   
+}
+
+input {
+    background-color: #fff;
+    border: 1px solid rgb(218, 209, 209);
+    border-radius: .33em;
+    font-size: 16px;
+    padding: 6px;
+    width: 200px;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid rgba(24, 108, 197, 1);
+    box-shadow: 0 0 5px rgb(24, 108, 197);
+}
+
+button {
+    width: 9em;
+    padding: 6px;
+    color: white;
+    border-radius: .5em;
+    background-color: #60a5fa ;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 0 0 2px black;
+}
+
+.current-temp {
+    font-size: 3em;
+}
+
+.feels-like {
+    font-size: .9em;    
+}
+
+.current-description {
+    font-size: 2.5em; 
+}
+
+.five-day-forecast {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin: 1em;
+}
+
+.five-day-card {
+    border-radius: 0.33em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 1.33em;
+    transition: 0.25s;
+    min-width: 175px;
+}
+
+.five-day-card:hover {
+    transform: scale(1.01);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+#current-icon {
+    
+}
